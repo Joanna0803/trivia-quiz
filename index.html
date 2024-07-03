@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Trivia Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fun Trivia Quiz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section with Carousel -->
+    <section id="home">
+        <!-- Carousel will be added here -->
+        <div id="trivia-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/1600x600?text=Fun+Trivia+1" class="d-block w-100" alt="Trivia 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to Fun Trivia Quiz</h5>
+                        <p>Test your knowledge on various exciting topics!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1600x600?text=Fun+Trivia+2" class="d-block w-100" alt="Trivia 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Challenge Yourself</h5>
+                        <p>Discover fascinating facts and learn something new!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1600x600?text=Fun+Trivia+3" class="d-block w-100" alt="Trivia 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fun for Everyone</h5>
+                        <p>Enjoy a variety of questions suitable for all ages!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#trivia-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#trivia-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <!-- About content will be added here -->
+        <div class="container">
+            <h2 class="text-center mb-4">About Our Fun Trivia Quiz</h2>
+            <p class="lead text-center">
+                Welcome to our exciting trivia quiz! Challenge yourself with a variety of interesting questions across different topics. Whether you're a trivia enthusiast or just looking for some fun, our quiz is perfect for everyone. Test your knowledge, learn new facts, and enjoy the thrill of discovery!
+            </p>
+            <p class="text-center">
+                To participate, simply start the quiz below. Answer each question to the best of your ability, and see how many you can get right. Good luck and have fun!
+            </p>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="py-5">
+        <!-- Quiz content will be added here -->
+        <div class="container">
+            <h2 class="text-center mb-4">Fun Trivia Quiz</h2>
+            <div id="quiz-container" class="card">
+                <!-- Quiz questions will be dynamically added here -->
+            </div>
+            <button id="next-btn" class="btn btn-primary mt-3">Next</button>
+            <button id="submit-btn" class="btn btn-success mt-3 d-none">Submit</button>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="py-5">
+        <!-- Feedback form will be added here -->
+        <div class="container">
+            <h2 class="text-center mb-4">Feedback</h2>
+            <form id="feedback-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <!-- Contact information will be added here -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <!-- Footer content will be added here -->
+        <div class="container">
+            <p>&copy; 2023 Fun Trivia Quiz. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Result Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1">
+        <!-- Modal content will be added here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

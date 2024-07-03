@@ -1,0 +1,30 @@
+body {
+    padding-top: 56px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    section {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+}
